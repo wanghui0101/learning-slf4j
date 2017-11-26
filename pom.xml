@@ -13,10 +13,12 @@
 
     <modules>
         <module>learning-slf4j-sample</module>
+        <module>learning-slf4j-multiple-bindings</module>
     </modules>
 
     <properties>
         <slf4j.version>1.7.25</slf4j.version>
+        <logback.version>1.2.3</logback.version>
         <servlet.version>3.1.0</servlet.version>
         <jdk.version>1.8</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,6 +35,11 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
                 <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
             </dependency>
             <dependency>
                 <groupId>javax.servlet</groupId>
